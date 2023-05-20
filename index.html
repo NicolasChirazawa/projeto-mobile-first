@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-querry.css">
+
+    <style>
+
+        main > article > section > i {
+
+            color: #3f2a9b !important;
+            font-size: 40px !important;
+            margin: 10px 0px 10px 0px;
+        }
+
+    </style>
+</head>
+
+<body onresize="mudarTamanho()">
+
+    <!--Começo do Header-->
+
+    <header>
+
+        <span id="desktop">
+
+            <img src="imagens/logo.png" alt="Logo da empresa">
+
+            <nav id="menuPc">
+
+                <p id="fix">Home</p>
+
+                <p>Produtos</p>
+
+                <p>Serviços</p>
+
+                <p>Contatos</p>
+
+            </nav>
+
+        </span>
+
+        <div onclick="clickMenu()"><i class="material-icons">menu</i></div>
+
+        <menu id="menuMobile">
+
+            <p>Home</p>
+
+            <p>Produtos</p>
+
+            <p>Serviços</p>
+
+            <p>Contatos</p>
+
+        </menu>
+
+    </header>
+
+    <!--Começo da Main-->
+
+    <main>
+
+        <section>
+
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+            
+            <p id="subtitulo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, sequi! Consectetur adipisicing elit. Expedita, dolorum animi. Distinctio, quos?  Necessitatibus, repudiandae iure? Nostrum vero repudiandae ab.</p>
+
+            <button>Iniciar!</button>
+
+        </section>
+
+        <article>
+
+            <section id="primeira">
+
+                <i class="material-icons">schedule</i>
+
+                <h2>Lorem ipsun</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat aliquid aperiam hic! In voluptate voluptates enim consectetur deleniti et quo dolorem architecto ullam ea nostrum optio expedita, vitae, ut repellendus totam aspernatur neque id accusamus tempore delectus minima cum. Qui porro ipsam unde, sed similique suscipit mollitia itaque architecto culpa.</p>
+
+            </section>
+
+            <section>
+
+                <i class="material-icons">public</i>
+
+                <h2>Loren ipsun</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat aliquid aperiam hic! In voluptate voluptates enim consectetur deleniti et quo dolorem architecto ullam ea nostrum optio expedita, vitae, ut repellendus totam aspernatur neque id accusamus tempore delectus minima cum. Qui porro ipsam unde, sed similique suscipit mollitia itaque architecto culpa.</p>
+
+            </section>
+
+            <section>
+
+                <i class="material-icons">support_agent</i>
+
+                <h2>Loren ipsun</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat aliquid aperiam hic! In voluptate voluptates enim consectetur deleniti et quo dolorem architecto ullam ea nostrum optio expedita, vitae, ut repellendus totam aspernatur neque id accusamus tempore delectus minima cum. Qui porro ipsam unde, sed similique suscipit mollitia itaque architecto culpa.</p>
+
+            </section>
+
+        </article>
+
+        <h2>Lorem, ipsum.</h2>
+
+        <p id="texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nobis voluptate omnis repellendus tempora modi ullam inventore? Maiores minima cum eius enim sit nemo accusamus, dolorem asperiores provident dolor molestias officiis sed soluta eaque repellat voluptatum odio vitae magnam sapiente libero. Pariatur sunt odio repudiandae fugit unde, suscipit omnis, et reprehenderit ab nulla aliquid vero inventore veritatis ipsum quas qui nemo, quidem rem corrupti nam esse blanditiis quis numquam debitis. Accusantium nam ex molestias cumque natus dolorum alias necessitatibus eaque similique possimus, aspernatur error culpa, ab quisquam, veniam amet impedit rerum dolorem? Mollitia dolore est odit tempore harum saepe non eveniet quod dolorem sed magnam autem accusantium beatae maiores, odio dolores aliquam a rem recusandae. Deleniti voluptatem atque doloribus vero, ad laborum, magni iste natus reiciendis earum dignissimos hic unde sed nobis consectetur, exercitationem beatae quidem quod consequatur possimus. Sequi delectus inventore, alias ut eligendi aliquid magni consequuntur laborum culpa molestiae minima voluptates illo quas doloribus deleniti rem dicta, sunt sed atque. Vel, culpa eveniet ut aspernatur eum rerum. Recusandae dolores dolorem totam magni odio corporis distinctio ut. Eveniet similique est illum nostrum veritatis in a consequuntur itaque, ipsa eos alias, quia eaque dolorem. Placeat obcaecati a laudantium dignissimos aliquam iure vel blanditiis, dicta eligendi suscipit ex harum quas ducimus eaque neque necessitatibus, aperiam doloremque voluptatem cupiditate consectetur fugit maxime sequi consequatur dolorem. Nisi modi nobis, doloribus id veritatis provident maiores illo ipsa ullam necessitatibus quibusdam rem aliquam velit voluptatum dolorem accusamus sed ab cum molestias eius! Tenetur officia porro voluptas! Dolores, voluptatum libero! Laudantium, debitis odio esse beatae tempore consequuntur magnam iste aut provident vero vel deserunt exercitationem aspernatur labore harum voluptatum hic. Accusantium facilis, dignissimos consequuntur quia dolorum aliquam magnam qui temporibus unde non harum sint numquam iure repellat ullam quae praesentium vitae ut blanditiis pariatur repellendus. Quos nulla perspiciatis facere
+        </p>
+
+    </main>
+
+    <footer>
+
+        <p>Site desenvolvido por <strong>Nicolas Chirazawa Fernandes</strong></p>
+
+    </footer>
+
+    <script>
+
+        function clickMenu(){
+
+            if (menuMobile.style.display == 'block') {
+                menuMobile.style.display = 'none'
+            } 
+                
+            else {
+
+                menuMobile.style.display = 'block';
+            }
+        }
+
+    </script>
+
+    <script>
+        function mudarTamanho(){
+
+        if(window.innerWidth >= 768){
+
+            menuMobile.style.display = 'block';
+        }
+
+        else{
+
+            menuMobile.style.display = 'none'
+        }    
+    }
+
+</script>
+
+</body>
+</html>
